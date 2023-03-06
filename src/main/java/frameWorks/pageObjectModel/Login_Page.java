@@ -1,5 +1,7 @@
 package frameWorks.pageObjectModel;
 
+import java.util.HashMap;
+
 import org.apache.log4j.Logger;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
@@ -15,13 +17,13 @@ public class Login_Page {
 			public static String LoginBtn_X ;
 	
 	
-	public static void configureValues(){
+	public static void configureValues(HashMap<String, String> login_Page_Sheet_MapDatas){
 		
 		log.info("*************** <Login_Page > configureValues() Initiate Started> ***************");
 		
-		UserNameTextBox_X = excelRead.Test_Excel_Details.login_Page_Sheet_MapDatas.get("Username_TextBox");
-		PassWordTextBox_X = excelRead.Test_Excel_Details.login_Page_Sheet_MapDatas.get("Password_TextBox");
-		LoginBtn_X = excelRead.Test_Excel_Details.login_Page_Sheet_MapDatas.get("Login_Button");
+		UserNameTextBox_X = login_Page_Sheet_MapDatas.get("Username_TextBox");
+		PassWordTextBox_X = login_Page_Sheet_MapDatas.get("Password_TextBox");
+		LoginBtn_X = login_Page_Sheet_MapDatas.get("Login_Button");
 		
 		log.info("--------------- <Login_Page > configureValues() Initiate Completed> ---------------");
 	}

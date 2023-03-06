@@ -5,8 +5,9 @@
   <meta charset='utf-8'>
   <title>TestNG reports</title>
 
-    <link type="text/css" href="testng-reports.css" rel="stylesheet" />  
-    <script type="text/javascript" src="jquery-1.7.1.min.js"></script>
+    <link type="text/css" href="testng-reports1.css" rel="stylesheet" id="ultra" />
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" id="retro" disabled="false"/>
+    <script type="text/javascript" src="jquery.min.js"></script>
     <script type="text/javascript" src="testng-reports.js"></script>
     <script type="text/javascript" src="https://www.google.com/jsapi"></script>
     <script type='text/javascript'>
@@ -23,22 +24,23 @@
   <body>
     <div class="top-banner-root">
       <span class="top-banner-title-font">Test results</span>
+      <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite, 1 failed test</span>
+      <span class="top-banner-font-1">1 suite</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
         <span>All suites</span>
-        <a href="#" class="collapse-all-link" title="Collapse/expand all the suites">
-          <img class="collapse-all-icon" src="collapseall.gif">
+        <a href="#" title="Collapse/expand all the suites" class="collapse-all-link">
+          <img src="collapseall.gif" class="collapse-all-icon">
           </img> <!-- collapse-all-icon -->
         </a> <!-- collapse-all-link -->
       </div> <!-- navigator-suite-header -->
       <div class="suite">
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
-            <a href="#" class="navigator-link" panel-name="suite-Default_suite">
-              <span class="suite-name border-failed">Default suite</span>
+            <a href="#" panel-name="suite-LMM_Suite" class="navigator-link">
+              <span class="suite-name border-skipped">LMM_Suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -48,37 +50,37 @@
             <div class="suite-section-content">
               <ul>
                 <li>
-                  <a href="#" class="navigator-link " panel-name="test-xml-Default_suite">
-                    <span>C:\Users\dineshk\AppData\Local\Temp\testng-eclipse-1971315722\testng-customsuite.xml</span>
+                  <a href="#" panel-name="test-xml-LMM_Suite" class="navigator-link ">
+                    <span>C:\Selenium\1. nC\nC_Selenium\TestNGSuite\LMMSuite.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" class="navigator-link " panel-name="testlist-Default_suite">
+                  <a href="#" panel-name="testlist-LMM_Suite" class="navigator-link ">
                     <span class="test-stats">1 test</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" class="navigator-link " panel-name="group-Default_suite">
+                  <a href="#" panel-name="group-LMM_Suite" class="navigator-link ">
                     <span>0 groups</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" class="navigator-link " panel-name="times-Default_suite">
+                  <a href="#" panel-name="times-LMM_Suite" class="navigator-link ">
                     <span>Times</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" class="navigator-link " panel-name="reporter-Default_suite">
+                  <a href="#" panel-name="reporter-LMM_Suite" class="navigator-link ">
                     <span>Reporter output</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" class="navigator-link " panel-name="ignored-methods-Default_suite">
+                  <a href="#" panel-name="ignored-methods-LMM_Suite" class="navigator-link ">
                     <span>Ignored methods</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" class="navigator-link " panel-name="chronological-Default_suite">
+                  <a href="#" panel-name="chronological-LMM_Suite" class="navigator-link ">
                     <span>Chronological view</span>
                   </a> <!-- navigator-link  -->
                 </li>
@@ -91,50 +93,36 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">5 methods, 1 failed,  4 skipped,  </span>
-                  </li>
-                  <li>
-                    <span class="method-list-title failed">Failed methods</span>
-                    <span class="show-or-hide-methods failed">
-                      <a href="#" panel-name="suite-Default_suite" class="hide-methods failed suite-Default_suite"> (hide)</a> <!-- hide-methods failed suite-Default_suite -->
-                      <a href="#" panel-name="suite-Default_suite" class="show-methods failed suite-Default_suite"> (show)</a> <!-- show-methods failed suite-Default_suite -->
-                    </span>
-                    <div class="method-list-content failed suite-Default_suite">
-                      <span>
-                        <img width="3%" src="failed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="marketTypesTest.LMM.Loan_ND_NewMode_InputsVerify" hash-for-method="bfr_Loan_ND_NewMode_InputsVerify">bfr_Loan_ND_NewMode_InputsVerify</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                    </div> <!-- method-list-content failed suite-Default_suite -->
+                    <span class="method-stats">4 methods,  4 skipped,  </span>
                   </li>
                   <li>
                     <span class="method-list-title skipped">Skipped methods</span>
                     <span class="show-or-hide-methods skipped">
-                      <a href="#" panel-name="suite-Default_suite" class="hide-methods skipped suite-Default_suite"> (hide)</a> <!-- hide-methods skipped suite-Default_suite -->
-                      <a href="#" panel-name="suite-Default_suite" class="show-methods skipped suite-Default_suite"> (show)</a> <!-- show-methods skipped suite-Default_suite -->
+                      <a href="#" panel-name="suite-LMM_Suite" class="hide-methods skipped suite-LMM_Suite"> (hide)</a> <!-- hide-methods skipped suite-LMM_Suite -->
+                      <a href="#" panel-name="suite-LMM_Suite" class="show-methods skipped suite-LMM_Suite"> (show)</a> <!-- show-methods skipped suite-LMM_Suite -->
                     </span>
-                    <div class="method-list-content skipped suite-Default_suite">
+                    <div class="method-list-content skipped suite-LMM_Suite">
                       <span>
-                        <img width="3%" src="skipped.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="marketTypesTest.LMM.Loan_ND_NewMode_InputsVerify" hash-for-method="bankDetails_NewMode_Inputs_Verification">bankDetails_NewMode_Inputs_Verification</a> <!-- method navigator-link -->
+                        <img src="skipped.png" width="3%"/>
+                        <a href="#" panel-name="suite-LMM_Suite" title="marketTypesTest.LMM.LMM_ND_Test_Save_Edit" class="method navigator-link" hash-for-method="editModeInputs">editModeInputs</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
-                        <img width="3%" src="skipped.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="marketTypesTest.LMM.Loan_ND_NewMode_InputsVerify" hash-for-method="cashFlow_NewMode_Verification">cashFlow_NewMode_Verification</a> <!-- method navigator-link -->
+                        <img src="skipped.png" width="3%"/>
+                        <a href="#" panel-name="suite-LMM_Suite" title="marketTypesTest.LMM.LMM_ND_Test_Save_Edit" class="method navigator-link" hash-for-method="editModeInputsVerify">editModeInputsVerify</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
-                        <img width="3%" src="skipped.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="marketTypesTest.LMM.Loan_ND_NewMode_InputsVerify" hash-for-method="frontPage_NewMode_Inputs_Verification">frontPage_NewMode_Inputs_Verification</a> <!-- method navigator-link -->
+                        <img src="skipped.png" width="3%"/>
+                        <a href="#" panel-name="suite-LMM_Suite" title="marketTypesTest.LMM.LMM_ND_Test_Save_Edit" class="method navigator-link" hash-for-method="newModeInputs">newModeInputs</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
-                        <img width="3%" src="skipped.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="marketTypesTest.LMM.Loan_ND_NewMode_InputsVerify" hash-for-method="infoPage_NewMode_Inputs_Verification">infoPage_NewMode_Inputs_Verification</a> <!-- method navigator-link -->
+                        <img src="skipped.png" width="3%"/>
+                        <a href="#" panel-name="suite-LMM_Suite" title="marketTypesTest.LMM.LMM_ND_Test_Save_Edit" class="method navigator-link" hash-for-method="newModeInputsVerify">newModeInputsVerify</a> <!-- method navigator-link -->
                       </span>
                       <br/>
-                    </div> <!-- method-list-content skipped suite-Default_suite -->
+                    </div> <!-- method-list-content skipped suite-LMM_Suite -->
                   </li>
                 </ul>
               </div> <!-- suite-section-content -->
@@ -145,287 +133,217 @@
     </div> <!-- navigator-root -->
     <div class="wrapper">
       <div class="main-panel-root">
-        <div panel-name="suite-Default_suite" class="panel Default_suite">
-          <div class="suite-Default_suite-class-failed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="failed.png"/>
-              <span class="class-name">marketTypesTest.LMM.Loan_ND_NewMode_InputsVerify</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="bfr_Loan_ND_NewMode_InputsVerify">
-                  </a> <!-- bfr_Loan_ND_NewMode_InputsVerify -->
-                  <span class="method-name">bfr_Loan_ND_NewMode_InputsVerify</span>
-                  <div class="stack-trace">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: [[FirefoxDriver: firefox on WINDOWS (8a4528a7-e2fd-4e81-a47c-8ea7aa9f4260)] -&gt; xpath: //button[@aria-label=&apos;Next Page&apos;]] (tried for 20 second(s) with 500 milliseconds interval)
-Build info: version: &apos;4.1.2&apos;, revision: &apos;9a5a329c5a&apos;
-System info: host: &apos;V-DEV03&apos;, ip: &apos;192.168.0.193&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_221&apos;
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 98.0.1, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20220313140707, moz:debuggerAddress: localhost:53415, moz:geckodriverVersion: 0.31.0, moz:headless: false, moz:processID: 22496, moz:profile: C:\Users\dineshk\AppData\Lo..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, proxy: Proxy(), se:cdp: ws://localhost:53415/devtoo..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 8a4528a7-e2fd-4e81-a47c-8ea7aa9f4260
-	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:138)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:231)
-	at handleFields.FindDeal_Edit_Delete.findDeal(FindDeal_Edit_Delete.java:96)
-	at marketTypesTest.LMM.Loan_ND_NewMode_InputsVerify.bfr_Loan_ND_NewMode_InputsVerify(Loan_ND_NewMode_InputsVerify.java:33)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:645)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:822)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1130)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
-	at org.testng.TestRunner.privateRun(TestRunner.java:782)
-	at org.testng.TestRunner.run(TestRunner.java:632)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
-	at org.testng.TestNG.run(TestNG.java:1064)
-	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:113)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:206)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:177)
-
-</div> <!-- stack-trace -->
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Default_suite-class-failed -->
-          <div class="suite-Default_suite-class-skipped">
+        <div panel-name="suite-LMM_Suite" class="panel LMM_Suite">
+          <div class="suite-LMM_Suite-class-skipped">
             <div class="main-panel-header rounded-window-top">
               <img src="skipped.png"/>
-              <span class="class-name">marketTypesTest.LMM.Loan_ND_NewMode_InputsVerify</span>
+              <span class="class-name">marketTypesTest.LMM.LMM_ND_Test_Save_Edit</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="bankDetails_NewMode_Inputs_Verification">
-                  </a> <!-- bankDetails_NewMode_Inputs_Verification -->
-                  <span class="method-name">bankDetails_NewMode_Inputs_Verification</span>
-                  <div class="stack-trace">java.lang.Throwable: Method Loan_ND_NewMode_InputsVerify.bankDetails_NewMode_Inputs_Verification()[pri:0, instance:marketTypesTest.LMM.Loan_ND_NewMode_InputsVerify@50f8360d] depends on not successfully finished methods
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1039)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
-	at org.testng.TestRunner.privateRun(TestRunner.java:782)
-	at org.testng.TestRunner.run(TestRunner.java:632)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
-	at org.testng.TestNG.run(TestNG.java:1064)
-	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:113)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:206)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:177)
-
+                  <a name="editModeInputs">
+                  </a> <!-- editModeInputs -->
+                  <span class="method-name">editModeInputs</span>
+                  <div class="stack-trace">java.lang.Throwable: Method LMM_ND_Test_Save_Edit.editModeInputs()[pri:0, instance:marketTypesTest.LMM.LMM_ND_Test_Save_Edit@53fe15ff] depends on not successfully finished methods
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 18 stack frames
 </div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="cashFlow_NewMode_Verification">
-                  </a> <!-- cashFlow_NewMode_Verification -->
-                  <span class="method-name">cashFlow_NewMode_Verification</span>
-                  <div class="stack-trace">java.lang.Throwable: Method Loan_ND_NewMode_InputsVerify.cashFlow_NewMode_Verification()[pri:0, instance:marketTypesTest.LMM.Loan_ND_NewMode_InputsVerify@50f8360d] depends on not successfully finished methods
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1039)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
-	at org.testng.TestRunner.privateRun(TestRunner.java:782)
-	at org.testng.TestRunner.run(TestRunner.java:632)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
-	at org.testng.TestNG.run(TestNG.java:1064)
-	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:113)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:206)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:177)
-
+                  <a name="editModeInputsVerify">
+                  </a> <!-- editModeInputsVerify -->
+                  <span class="method-name">editModeInputsVerify</span>
+                  <div class="stack-trace">java.lang.Throwable: Method LMM_ND_Test_Save_Edit.editModeInputsVerify()[pri:0, instance:marketTypesTest.LMM.LMM_ND_Test_Save_Edit@53fe15ff] depends on not successfully finished methods
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 18 stack frames
 </div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="frontPage_NewMode_Inputs_Verification">
-                  </a> <!-- frontPage_NewMode_Inputs_Verification -->
-                  <span class="method-name">frontPage_NewMode_Inputs_Verification</span>
-                  <div class="stack-trace">java.lang.Throwable: Method Loan_ND_NewMode_InputsVerify.frontPage_NewMode_Inputs_Verification()[pri:0, instance:marketTypesTest.LMM.Loan_ND_NewMode_InputsVerify@50f8360d] depends on not successfully finished methods
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1039)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
-	at org.testng.TestRunner.privateRun(TestRunner.java:782)
-	at org.testng.TestRunner.run(TestRunner.java:632)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
-	at org.testng.TestNG.run(TestNG.java:1064)
-	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:113)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:206)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:177)
-
+                  <a name="newModeInputs">
+                  </a> <!-- newModeInputs -->
+                  <span class="method-name">newModeInputs</span>
+                  <div class="stack-trace">org.openqa.selenium.ElementClickInterceptedException: Element &lt;button id=&quot;login&quot; class=&quot;MuiButtonBase-root MuiButton-root MuiButton-contained makeStyles-submit-11 MuiButton-fullWidth&quot; name=&quot;login&quot; type=&quot;button&quot;&gt; is not clickable at point (1266,505) because another element &lt;div class=&quot;MuiBackdrop-root makeStyles-backdrop-13&quot;&gt; obscures it
+Build info: version: &apos;4.1.2&apos;, revision: &apos;9a5a329c5a&apos;
+System info: host: &apos;V-DEV03&apos;, ip: &apos;192.168.1.13&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.5&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [0a0b4798-8e0c-4360-83b8-52f8f7101b79, clickElement {id=f9ed5c3d-adf8-4adb-a5db-fc6ab0a0b5ec}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 109.0, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20230112150232, moz:debuggerAddress: 127.0.0.1:52874, moz:geckodriverVersion: 0.32.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 12036, moz:profile: C:\Users\dineshk\AppData\Lo..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://127.0.0.1:52874/devtoo..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Element: [[FirefoxDriver: firefox on WINDOWS (0a0b4798-8e0c-4360-83b8-52f8f7101b79)] -&gt; xpath: //*[@id=&quot;login&quot;]]
+Session ID: 0a0b4798-8e0c-4360-83b8-52f8f7101b79
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:558)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:251)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:77)
+	at beforeTest.Login.login(Login.java:78)
+	at beforeTest.Bfr_Any_Test.bfr_Any_Test(Bfr_Any_Test.java:29)
+... Removed 24 stack frames
 </div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="infoPage_NewMode_Inputs_Verification">
-                  </a> <!-- infoPage_NewMode_Inputs_Verification -->
-                  <span class="method-name">infoPage_NewMode_Inputs_Verification</span>
-                  <div class="stack-trace">java.lang.Throwable: Method Loan_ND_NewMode_InputsVerify.infoPage_NewMode_Inputs_Verification()[pri:0, instance:marketTypesTest.LMM.Loan_ND_NewMode_InputsVerify@50f8360d] depends on not successfully finished methods
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1039)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
-	at org.testng.TestRunner.privateRun(TestRunner.java:782)
-	at org.testng.TestRunner.run(TestRunner.java:632)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
-	at org.testng.TestNG.run(TestNG.java:1064)
-	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:113)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:206)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:177)
-
+                  <a name="newModeInputsVerify">
+                  </a> <!-- newModeInputsVerify -->
+                  <span class="method-name">newModeInputsVerify</span>
+                  <div class="stack-trace">java.lang.Throwable: Method LMM_ND_Test_Save_Edit.newModeInputsVerify()[pri:0, instance:marketTypesTest.LMM.LMM_ND_Test_Save_Edit@53fe15ff] depends on not successfully finished methods
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 18 stack frames
 </div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Default_suite-class-skipped -->
-        </div> <!-- panel Default_suite -->
-        <div panel-name="test-xml-Default_suite" class="panel">
+          </div> <!-- suite-LMM_Suite-class-skipped -->
+        </div> <!-- panel LMM_Suite -->
+        <div panel-name="test-xml-LMM_Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\dineshk\AppData\Local\Temp\testng-eclipse-1971315722\testng-customsuite.xml</span>
+            <span class="header-content">C:\Selenium\1. nC\nC_Selenium\TestNGSuite\LMMSuite.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
 &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
-&lt;!DOCTYPE suite SYSTEM &quot;http://testng.org/testng-1.0.dtd&quot;&gt;
-&lt;suite guice-stage=&quot;DEVELOPMENT&quot; name=&quot;Default suite&quot;&gt;
-  &lt;test verbose=&quot;2&quot; name=&quot;Default test&quot;&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite name=&quot;LMM_Suite&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;LMM_ND_Test&quot;&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;marketTypesTest.LMM.Loan_ND_NewMode_InputsVerify&quot;/&gt;
+      &lt;class name=&quot;beforeTest.Bfr_Any_Test&quot;/&gt;
+      &lt;class name=&quot;marketTypesTest.LMM.LMM_ND_Test_Save_Edit&quot;&gt;
+        &lt;methods&gt;
+          &lt;include name=&quot;newModeInputs&quot;/&gt;
+          &lt;include name=&quot;newModeInputsVerify&quot;/&gt;
+          &lt;include name=&quot;editModeInputs&quot;/&gt;
+          &lt;include name=&quot;editModeInputsVerify&quot;/&gt;
+        &lt;/methods&gt;
+      &lt;/class&gt; &lt;!-- marketTypesTest.LMM.LMM_ND_Test_Save_Edit --&gt;
     &lt;/classes&gt;
-  &lt;/test&gt; &lt;!-- Default test --&gt;
-&lt;/suite&gt; &lt;!-- Default suite --&gt;
+  &lt;/test&gt; &lt;!-- LMM_ND_Test --&gt;
+&lt;/suite&gt; &lt;!-- LMM_Suite --&gt;
             </pre>
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="testlist-Default_suite" class="panel">
+        <div panel-name="testlist-LMM_Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">Tests for Default suite</span>
+            <span class="header-content">Tests for LMM_Suite</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <ul>
               <li>
-                <span class="test-name">Default test (1 class)</span>
+                <span class="test-name">LMM_ND_Test (2 classes)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="group-Default_suite" class="panel">
+        <div panel-name="group-LMM_Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">Groups for Default suite</span>
+            <span class="header-content">Groups for LMM_Suite</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="times-Default_suite" class="panel">
+        <div panel-name="times-LMM_Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">Times for Default suite</span>
+            <span class="header-content">Times for LMM_Suite</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="times-div">
               <script type="text/javascript">
-suiteTableInitFunctions.push('tableData_Default_suite');
-function tableData_Default_suite() {
+suiteTableInitFunctions.push('tableData_LMM_Suite');
+function tableData_LMM_Suite() {
 var data = new google.visualization.DataTable();
 data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(5);
+data.addRows(4);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'bfr_Loan_ND_NewMode_InputsVerify')
-data.setCell(0, 2, 'marketTypesTest.LMM.Loan_ND_NewMode_InputsVerify')
-data.setCell(0, 3, 58256);
+data.setCell(0, 1, 'newModeInputsVerify')
+data.setCell(0, 2, 'marketTypesTest.LMM.LMM_ND_Test_Save_Edit')
+data.setCell(0, 3, 1);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'frontPage_NewMode_Inputs_Verification')
-data.setCell(1, 2, 'marketTypesTest.LMM.Loan_ND_NewMode_InputsVerify')
+data.setCell(1, 1, 'newModeInputs')
+data.setCell(1, 2, 'marketTypesTest.LMM.LMM_ND_Test_Save_Edit')
 data.setCell(1, 3, 0);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'bankDetails_NewMode_Inputs_Verification')
-data.setCell(2, 2, 'marketTypesTest.LMM.Loan_ND_NewMode_InputsVerify')
+data.setCell(2, 1, 'editModeInputsVerify')
+data.setCell(2, 2, 'marketTypesTest.LMM.LMM_ND_Test_Save_Edit')
 data.setCell(2, 3, 0);
 data.setCell(3, 0, 3)
-data.setCell(3, 1, 'infoPage_NewMode_Inputs_Verification')
-data.setCell(3, 2, 'marketTypesTest.LMM.Loan_ND_NewMode_InputsVerify')
+data.setCell(3, 1, 'editModeInputs')
+data.setCell(3, 2, 'marketTypesTest.LMM.LMM_ND_Test_Save_Edit')
 data.setCell(3, 3, 0);
-data.setCell(4, 0, 4)
-data.setCell(4, 1, 'cashFlow_NewMode_Verification')
-data.setCell(4, 2, 'marketTypesTest.LMM.Loan_ND_NewMode_InputsVerify')
-data.setCell(4, 3, 0);
-window.suiteTableData['Default_suite']= { tableData: data, tableDiv: 'times-div-Default_suite'}
+window.suiteTableData['LMM_Suite']= { tableData: data, tableDiv: 'times-div-LMM_Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 58 seconds</span>
-              <div id="times-div-Default_suite">
-              </div> <!-- times-div-Default_suite -->
+              <span class="suite-total-time">Total running time: 1 ms</span>
+              <div id="times-div-LMM_Suite">
+              </div> <!-- times-div-LMM_Suite -->
             </div> <!-- times-div -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="reporter-Default_suite" class="panel">
+        <div panel-name="reporter-LMM_Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">Reporter output for Default suite</span>
+            <span class="header-content">Reporter output for LMM_Suite</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="ignored-methods-Default_suite" class="panel">
+        <div panel-name="ignored-methods-LMM_Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
             <span class="header-content">0 ignored methods</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="chronological-Default_suite" class="panel">
+        <div panel-name="chronological-LMM_Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
             <span class="header-content">Methods in chronological order</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">marketTypesTest.LMM.Loan_ND_NewMode_InputsVerify</div> <!-- chronological-class-name -->
-              <div class="test-method">
+              <div class="chronological-class-name">beforeTest.Bfr_Any_Test</div> <!-- chronological-class-name -->
+              <div class="configuration-suite before">
                 <img src="failed.png">
                 </img>
-                <span class="method-name">bfr_Loan_ND_NewMode_InputsVerify</span>
+                <span class="method-name">bfr_Any_Test</span>
                 <span class="method-start">0 ms</span>
+              </div> <!-- configuration-suite before -->
+              <div class="configuration-test before">
+                <span class="method-name">bfr_LMM_Test</span>
+                <span class="method-start">11312 ms</span>
+              </div> <!-- configuration-test before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">marketTypesTest.LMM.LMM_ND_Test_Save_Edit</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">newModeInputs</span>
+                <span class="method-start">11335 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">newModeInputsVerify</span>
+                <span class="method-start">11340 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">editModeInputs</span>
+                <span class="method-start">11342 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">editModeInputsVerify</span>
+                <span class="method-start">11345 ms</span>
               </div> <!-- test-method -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
       </div> <!-- main-panel-root -->
     </div> <!-- wrapper -->
   </body>
+<script type="text/javascript" src="testng-reports2.js"></script>
 </html>

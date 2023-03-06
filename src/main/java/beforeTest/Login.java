@@ -15,7 +15,7 @@ public class Login {
 
 	public static void login() {
 
-		log.info("*************** <Login Initiate Started> ***************");
+		log.info("*************** <Login Initiated> ***************");
 
 		driver = DriverConfig.driver;
 		wait_E = DriverConfig.wait_E;
@@ -54,7 +54,7 @@ public class Login {
 		} else {
 			wait_E.until(ExpectedConditions
 					.elementToBeClickable(frameWorks.pageObjectModel.Login_Page.userNameTextBox_EL(driver)))
-					.sendKeys(UserName_I);
+			        .sendKeys(UserName_I);
 			log.info("Username is Entered");
 		}
 
@@ -66,18 +66,21 @@ public class Login {
 			}
 		} else {
 			wait_E.until(ExpectedConditions
-					.elementToBeClickable(frameWorks.pageObjectModel.Login_Page.passWordTextBox_EL(driver)))
-					.sendKeys(PassWord_I);
+				  .elementToBeClickable(frameWorks.pageObjectModel.Login_Page.passWordTextBox_EL(driver)))
+			      .sendKeys(PassWord_I);
 			log.info("Password is Entered");
 		}
 
+		//Wait Until Page Completely Loaded, To Avoid Exception
+		handleFields.PageLoad_CircleBar_Handle.is_PageLoaded_Check(driver);
+		
 		wait_E.until(ExpectedConditions.elementToBeClickable(frameWorks.pageObjectModel.Login_Page.loginBtn_EL(driver)))
-				.click();
+		.click();
 		log.info("Login Button is Clickable & Clicked");
 
 		handleFields.AlertMsg.alert_MsgHandle(driver);
 
-		log.info("--------------- <Login Initiate Completed> ---------------");
+		log.info("--------------- <Login Completed> ---------------");
 
 	}
 }

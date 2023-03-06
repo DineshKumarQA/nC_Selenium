@@ -27,7 +27,7 @@ public class EditMode_Fields_Verify {
 	public static void forAutoDefaultedFields_ValueVerification(String RetrievedValue, String InputValue, String NewMode_Defaulted_Value){
 		
 		if(InputValue.isEmpty()){
-			log.info("Proceed to Verify by New_Mode Defaulted Value, Since the Excel Input is Empty!");			
+			log.info("Proceed to Verify by Defaulted Value, Since the Excel Input is Empty!");			
 			handleFields.EditMode_Fields_Verify.retrievedValueVerify(RetrievedValue, NewMode_Defaulted_Value);
 		}
 		else{

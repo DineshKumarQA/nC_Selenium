@@ -1,28 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite guice-stage="DEVELOPMENT" name="Failed suite [LMM_Suite]">
-  <test name="LMM_ND_Test">
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [LMM_Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="LMM_ND_Test(failed)">
     <classes>
-      <class name="marketTypesTest.BfrTest"/>
-      <class name="marketTypesTest.Loan_ND_Test"/>
-    </classes>
-  </test> <!-- LMM_ND_Test -->
-  <test name="LMM_ND_Test(failed)">
-    <classes>
-      <class name="marketTypesTest.BfrTest">
+      <class name="marketTypesTest.LMM.LMM_ND_Test_Save_Edit">
         <methods>
-          <include name="bfrTest"/>
+          <include name="editModeInputs"/>
+          <include name="editModeInputsVerify"/>
+          <include name="newModeInputsVerify"/>
+          <include name="newModeInputs"/>
         </methods>
-      </class> <!-- marketTypesTest.BfrTest -->
-      <class name="marketTypesTest.Loan_ND_Test">
-        <methods>
-          <include name="bankDetailsPage"/>
-          <include name="cashFlowPage"/>
-          <include name="infoPage"/>
-          <include name="frontPage"/>
-          <include name="beforeTestConfigs"/>
-        </methods>
-      </class> <!-- marketTypesTest.Loan_ND_Test -->
+      </class> <!-- marketTypesTest.LMM.LMM_ND_Test_Save_Edit -->
     </classes>
   </test> <!-- LMM_ND_Test(failed) -->
 </suite> <!-- Failed suite [LMM_Suite] -->

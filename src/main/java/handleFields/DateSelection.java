@@ -176,7 +176,7 @@ public class DateSelection {
 					if(Find_Input_Date.getText().equals(Day)){
 						
 						wait_E.until(ExpectedConditions.elementToBeClickable(Find_Input_Date)).click();							
-												
+						log.info("Given Date is Clicked");					
 						break;
 					}
 				}

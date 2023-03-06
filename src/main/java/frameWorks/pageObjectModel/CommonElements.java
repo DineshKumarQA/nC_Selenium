@@ -1,5 +1,6 @@
 package frameWorks.pageObjectModel;
 
+import java.util.HashMap;
 import java.util.List;
 
 import org.apache.log4j.Logger;
@@ -34,30 +35,30 @@ public class CommonElements {
 		public static String Page_Load_BackDrop_X;
 		
 		
-		public static void configureValues(){
+		public static void configureValues(HashMap<String, String> Common_Elements_Sheet_MapDatas){
 			
 		log.info("*************** <CommonElements > configureValues() Initiate Started> ***************");
 		
-		Year_Link_X=excelRead.Test_Excel_Details.Common_Elements_Sheet_MapDatas.get("Year_Link");
-		Year_Search_X=excelRead.Test_Excel_Details.Common_Elements_Sheet_MapDatas.get("Year_Search");
-		Month_Identify_X=excelRead.Test_Excel_Details.Common_Elements_Sheet_MapDatas.get("Month_Identify");
-		Month_Search_Prev_Buttons_X=excelRead.Test_Excel_Details.Common_Elements_Sheet_MapDatas.get("Month_Search_Prev_Buttons");
-		Month_Search_Next_Buttons_X=excelRead.Test_Excel_Details.Common_Elements_Sheet_MapDatas.get("Month_Search_Next_Buttons");
-		Date_Search_X=excelRead.Test_Excel_Details.Common_Elements_Sheet_MapDatas.get("Date_Search");
+		Year_Link_X=Common_Elements_Sheet_MapDatas.get("Year_Link");
+		Year_Search_X=Common_Elements_Sheet_MapDatas.get("Year_Search");
+		Month_Identify_X=Common_Elements_Sheet_MapDatas.get("Month_Identify");
+		Month_Search_Prev_Buttons_X=Common_Elements_Sheet_MapDatas.get("Month_Search_Prev_Buttons");
+		Month_Search_Next_Buttons_X=Common_Elements_Sheet_MapDatas.get("Month_Search_Next_Buttons");
+		Date_Search_X=Common_Elements_Sheet_MapDatas.get("Date_Search");
 		
-		AlertBox_Header_X=excelRead.Test_Excel_Details.Common_Elements_Sheet_MapDatas.get("AlertBox_Header");
-		AlertBox_Description_X=excelRead.Test_Excel_Details.Common_Elements_Sheet_MapDatas.get("AlertBox_Description");
-		AlertBox_Yes_Btn_X=excelRead.Test_Excel_Details.Common_Elements_Sheet_MapDatas.get("AlertBox_Yes_Btn");
-		AlertBox_No_Btn_X=excelRead.Test_Excel_Details.Common_Elements_Sheet_MapDatas.get("AlertBox_No_Btn");
+		AlertBox_Header_X=Common_Elements_Sheet_MapDatas.get("AlertBox_Header");
+		AlertBox_Description_X=Common_Elements_Sheet_MapDatas.get("AlertBox_Description");
+		AlertBox_Yes_Btn_X=Common_Elements_Sheet_MapDatas.get("AlertBox_Yes_Btn");
+		AlertBox_No_Btn_X=Common_Elements_Sheet_MapDatas.get("AlertBox_No_Btn");
 		
-		Alert_Msg_X=excelRead.Test_Excel_Details.Common_Elements_Sheet_MapDatas.get("Alert_Msg");
-		Alert_Msg_Success_X=excelRead.Test_Excel_Details.Common_Elements_Sheet_MapDatas.get("Alert_Msg_Success");
-		Alert_Msg_Warning_X=excelRead.Test_Excel_Details.Common_Elements_Sheet_MapDatas.get("Alert_Msg_Warning");
-		Alert_Msg_Error_X=excelRead.Test_Excel_Details.Common_Elements_Sheet_MapDatas.get("Alert_Msg_Error");
-		Alert_Close_Btn_X=excelRead.Test_Excel_Details.Common_Elements_Sheet_MapDatas.get("Alert_Close_Btn");
+		Alert_Msg_X=Common_Elements_Sheet_MapDatas.get("Alert_Msg");
+		Alert_Msg_Success_X=Common_Elements_Sheet_MapDatas.get("Alert_Msg_Success");
+		Alert_Msg_Warning_X=Common_Elements_Sheet_MapDatas.get("Alert_Msg_Warning");
+		Alert_Msg_Error_X=Common_Elements_Sheet_MapDatas.get("Alert_Msg_Error");
+		Alert_Close_Btn_X=Common_Elements_Sheet_MapDatas.get("Alert_Close_Btn");
 		
-		Page_Load_Circle_X=excelRead.Test_Excel_Details.Common_Elements_Sheet_MapDatas.get("Page_Load_Circle");
-		Page_Load_BackDrop_X=excelRead.Test_Excel_Details.Common_Elements_Sheet_MapDatas.get("Page_Load_BackDrop");
+		Page_Load_Circle_X=Common_Elements_Sheet_MapDatas.get("Page_Load_Circle");
+		Page_Load_BackDrop_X=Common_Elements_Sheet_MapDatas.get("Page_Load_BackDrop");
 		
 		log.info("--------------- <CommonElements > configureValues() Initiate Completed> ---------------");
 		}

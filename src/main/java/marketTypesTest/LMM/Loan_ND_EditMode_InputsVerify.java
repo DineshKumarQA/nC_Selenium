@@ -8,7 +8,7 @@ import org.openqa.selenium.support.ui.Wait;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.Test;
 
-public class Loan_ND_EditMode_InputsVerify /*extends Loan_ND_EditMode_Inputs*/ {	
+public class Loan_ND_EditMode_InputsVerify extends Loan_ND_EditMode_Inputs {	
 	
 	// Declarations Of Log4j For This Class
 	public static Logger log = Logger.getLogger(Loan_ND_EditMode_InputsVerify.class.getName());

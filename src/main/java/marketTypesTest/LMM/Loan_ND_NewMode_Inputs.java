@@ -71,7 +71,7 @@ public class Loan_ND_NewMode_Inputs {
 		handleFields.PageLoad_CircleBar_Handle.is_PageLoaded_Check(driver);
 		
 		wait_E.until(ExpectedConditions.visibilityOf(frameWorks.pageObjectModel.Dashboard_Elements.ADD_Deal_Btn_EL(driver))).click();
-		wait_E.until(ExpectedConditions.visibilityOf(frameWorks.pageObjectModel.Dashboard_Elements.Loan_EL(driver))).click();		
+		wait_E.until(ExpectedConditions.visibilityOf(frameWorks.pageObjectModel.Dashboard_Elements.Money_Market_EL(driver))).click();		
 		
 		
 		String Asset_Liabiity_NI=frameWorks.dataDrivenModel.Loan_ND_New_TestInputs.Asset_Liabiity_NI; 	// Variable Name Ends With '_NI' Means 'New_Mode-Inputs'.

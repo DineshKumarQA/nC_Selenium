@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="LMM_Suite" verbose="1" >
+	<test name="LMM_ND_Test">
+
+		<classes>
+						
+			<class name ="beforeTest.Bfr_Any_Test" />
+			<class name ="marketTypesTest.LMM.LMM_ND_Test_Save_Edit">
+				<methods>
+			        <include name="newModeInputs" />
+			        <include name="newModeInputsVerify" />
+			        <include name="editModeInputs" />
+			        <include name="editModeInputsVerify" />
+			    </methods>
+			</class>
+			
+		</classes>
+
+	</test>
+</suite>

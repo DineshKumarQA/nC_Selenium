@@ -1,8 +1,12 @@
 package beforeTest;
 
+import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.BeforeSuite;
+import org.testng.annotations.BeforeTest;
+
 public class Bfr_Any_Test {
 
-	
+	@BeforeSuite
 	public static void bfr_Any_Test() {
 		
 		/** WHAT - Initialize Excel Reads, Before Run Any Test.
@@ -26,16 +30,16 @@ public class Bfr_Any_Test {
 
 	}
 	
-	
+	@BeforeTest
 	public static void bfr_LMM_Test() {
 
-		// loan_ND_Elements - Sheet Read.
+		// loan_ND_Elements - Sheet Read and Configuring Values
 		excelRead.Test_Excel_Details.loan_ND_Elements_SheetRead();
 
-		// loan_ND_New_Inputs - Sheet Read.
+		// loan_ND_New_Inputs - Sheet Read and Configuring Values
 		excelRead.Test_Excel_Details.loan_ND_New_Inputs_SheetRead();
 
-		// loan_ND_Edit_Inputs - Sheet Read.
+		// loan_ND_Edit_Inputs - Sheet Read and Configuring Values
 		excelRead.Test_Excel_Details.loan_ND_Edit_Inputs_SheetRead();
 
 	}

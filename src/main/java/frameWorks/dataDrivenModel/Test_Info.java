@@ -1,5 +1,7 @@
 package frameWorks.dataDrivenModel;
 
+import java.util.HashMap;
+
 import org.apache.log4j.Logger;
 
 public class Test_Info {
@@ -10,25 +12,17 @@ public class Test_Info {
 		public static String TestBrowser_I;
 		public static String nC_URL_I;
 		public static String UserName_I;
-		public static String PassWord_I;
+		public static String PassWord_I;				
 		
-		public static String CW_Elements_I;
-		public static String LMM_TestInputs_I;
-		
-		
-		public static void configureValues(){
+		public static void configureValues(HashMap<String, String> Test_Info_Sheet_MapDatas){
 			
-			log.info("*************** <Test_Info > configureValues() Initiate Started> ***************");
+			log.info("*************** <Test_Info > configureValues() Initiated> ***************");
 			
-			TestBrowser_I = excelRead.Test_Excel_Details.Test_Info_Sheet_MapDatas.get("Test_Browser");
-			nC_URL_I = excelRead.Test_Excel_Details.Test_Info_Sheet_MapDatas.get("nC_URL");
-			UserName_I = excelRead.Test_Excel_Details.Test_Info_Sheet_MapDatas.get("Username");
-			PassWord_I = excelRead.Test_Excel_Details.Test_Info_Sheet_MapDatas.get("Password");
+			TestBrowser_I = Test_Info_Sheet_MapDatas.get("Test_Browser");
+			nC_URL_I = Test_Info_Sheet_MapDatas.get("nC_URL");
+			UserName_I = Test_Info_Sheet_MapDatas.get("Username");
+			PassWord_I = Test_Info_Sheet_MapDatas.get("Password");
 			
-			CW_Elements_I = excelRead.Test_Excel_Details.Test_Info_Sheet_MapDatas.get("CW_Elements");
-			LMM_TestInputs_I = excelRead.Test_Excel_Details.Test_Info_Sheet_MapDatas.get("LMM_TestInputs");
-			
-			log.info("--------------- <Test_Info > configureValues() Initiate Completed> ---------------");
+			log.info("--------------- <Test_Info > configureValues() Completed> ---------------");
 		}
-
 }

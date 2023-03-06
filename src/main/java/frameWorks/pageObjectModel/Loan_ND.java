@@ -1,5 +1,7 @@
 package frameWorks.pageObjectModel;
 
+import java.util.HashMap;
+
 import org.apache.log4j.Logger;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
@@ -91,86 +93,86 @@ public class Loan_ND {
 			
 			
 			
-			public static void configureValues(){
+			public static void configureValues(HashMap<String, String> Loan_ND_Elements_Sheet_MapDatas){
 				
 				log.info("*************** <Loan_ND > configureValues() Initiate Started> ***************");
 				
-				Asset_X=excelRead.Test_Excel_Details.Loan_ND_Elements_Sheet_MapDatas.get("Asset");                           
-				Liability_X=excelRead.Test_Excel_Details.Loan_ND_Elements_Sheet_MapDatas.get("Liability");
-				Business_Entity_X=excelRead.Test_Excel_Details.Loan_ND_Elements_Sheet_MapDatas.get("Business_Entity");
-				Credit_Risk_X=excelRead.Test_Excel_Details.Loan_ND_Elements_Sheet_MapDatas.get("Credit_Risk");
-				Product_X=excelRead.Test_Excel_Details.Loan_ND_Elements_Sheet_MapDatas.get("Product");
-				Strategy_X=excelRead.Test_Excel_Details.Loan_ND_Elements_Sheet_MapDatas.get("Strategy");
+				Asset_X=Loan_ND_Elements_Sheet_MapDatas.get("Asset");                           
+				Liability_X=Loan_ND_Elements_Sheet_MapDatas.get("Liability");
+				Business_Entity_X=Loan_ND_Elements_Sheet_MapDatas.get("Business_Entity");
+				Credit_Risk_X=Loan_ND_Elements_Sheet_MapDatas.get("Credit_Risk");
+				Product_X=Loan_ND_Elements_Sheet_MapDatas.get("Product");
+				Strategy_X=Loan_ND_Elements_Sheet_MapDatas.get("Strategy");
 				
-				Deal_Date_Btn_X=excelRead.Test_Excel_Details.Loan_ND_Elements_Sheet_MapDatas.get("Deal_Date_Btn");   	// Date -> Ends 'Btn' Means 'Calendar Button'
-				Value_Date_Btn_X=excelRead.Test_Excel_Details.Loan_ND_Elements_Sheet_MapDatas.get("Value_Date_Btn");
-				Maturity_Date_Btn_X=excelRead.Test_Excel_Details.Loan_ND_Elements_Sheet_MapDatas.get("Maturity_Date_Btn");
+				Deal_Date_Btn_X=Loan_ND_Elements_Sheet_MapDatas.get("Deal_Date_Btn");   	// Date -> Ends 'Btn' Means 'Calendar Button'
+				Value_Date_Btn_X=Loan_ND_Elements_Sheet_MapDatas.get("Value_Date_Btn");
+				Maturity_Date_Btn_X=Loan_ND_Elements_Sheet_MapDatas.get("Maturity_Date_Btn");
 				
-				Deal_Date_txt_X=excelRead.Test_Excel_Details.Loan_ND_Elements_Sheet_MapDatas.get("Deal_Date_txt");		// Date -> Ends 'txt' Means 'Date Input Text Box'
-				Value_Date_txt_X=excelRead.Test_Excel_Details.Loan_ND_Elements_Sheet_MapDatas.get("Value_Date_txt");
-				Maturity_Date_txt_X=excelRead.Test_Excel_Details.Loan_ND_Elements_Sheet_MapDatas.get("Maturity_Date_txt");
+				Deal_Date_txt_X=Loan_ND_Elements_Sheet_MapDatas.get("Deal_Date_txt");		// Date -> Ends 'txt' Means 'Date Input Text Box'
+				Value_Date_txt_X=Loan_ND_Elements_Sheet_MapDatas.get("Value_Date_txt");
+				Maturity_Date_txt_X=Loan_ND_Elements_Sheet_MapDatas.get("Maturity_Date_txt");
 						
-				Tenor_X=excelRead.Test_Excel_Details.Loan_ND_Elements_Sheet_MapDatas.get("Tenor");
-				Currency_X=excelRead.Test_Excel_Details.Loan_ND_Elements_Sheet_MapDatas.get("Currency");
-				Principal_X=excelRead.Test_Excel_Details.Loan_ND_Elements_Sheet_MapDatas.get("Principal");
-				RateType_Fixed_X=excelRead.Test_Excel_Details.Loan_ND_Elements_Sheet_MapDatas.get("RateType_Fixed");
-				RateType_Float_X=excelRead.Test_Excel_Details.Loan_ND_Elements_Sheet_MapDatas.get("RateType_Float");
-				Reference_ID_X=excelRead.Test_Excel_Details.Loan_ND_Elements_Sheet_MapDatas.get("Reference_ID");
-				Reference_Tenor_X=excelRead.Test_Excel_Details.Loan_ND_Elements_Sheet_MapDatas.get("Reference_Tenor");
-				Reference_Rate_X=excelRead.Test_Excel_Details.Loan_ND_Elements_Sheet_MapDatas.get("Reference_Rate");
-				Spread_X=excelRead.Test_Excel_Details.Loan_ND_Elements_Sheet_MapDatas.get("Spread");
-				Rate_X=excelRead.Test_Excel_Details.Loan_ND_Elements_Sheet_MapDatas.get("Rate%");
-				W_Tax_X=excelRead.Test_Excel_Details.Loan_ND_Elements_Sheet_MapDatas.get("W_Tax");
-				We_Absorb_X=excelRead.Test_Excel_Details.Loan_ND_Elements_Sheet_MapDatas.get("We_Absorb");
+				Tenor_X=Loan_ND_Elements_Sheet_MapDatas.get("Tenor");
+				Currency_X=Loan_ND_Elements_Sheet_MapDatas.get("Currency");
+				Principal_X=Loan_ND_Elements_Sheet_MapDatas.get("Principal");
+				RateType_Fixed_X=Loan_ND_Elements_Sheet_MapDatas.get("RateType_Fixed");
+				RateType_Float_X=Loan_ND_Elements_Sheet_MapDatas.get("RateType_Float");
+				Reference_ID_X=Loan_ND_Elements_Sheet_MapDatas.get("Reference_ID");
+				Reference_Tenor_X=Loan_ND_Elements_Sheet_MapDatas.get("Reference_Tenor");
+				Reference_Rate_X=Loan_ND_Elements_Sheet_MapDatas.get("Reference_Rate");
+				Spread_X=Loan_ND_Elements_Sheet_MapDatas.get("Spread");
+				Rate_X=Loan_ND_Elements_Sheet_MapDatas.get("Rate%");
+				W_Tax_X=Loan_ND_Elements_Sheet_MapDatas.get("W_Tax");
+				We_Absorb_X=Loan_ND_Elements_Sheet_MapDatas.get("We_Absorb");
 				
 				//INFO
-				Info_Icon_Btn_X=excelRead.Test_Excel_Details.Loan_ND_Elements_Sheet_MapDatas.get("Info_Icon_Btn");
-				DealReference_Exp_X=excelRead.Test_Excel_Details.Loan_ND_Elements_Sheet_MapDatas.get("DealReference_Exp");
-				Principal_Freq_X=excelRead.Test_Excel_Details.Loan_ND_Elements_Sheet_MapDatas.get("Principal_Freq");
-				Interest_Freq_X=excelRead.Test_Excel_Details.Loan_ND_Elements_Sheet_MapDatas.get("Interest_Freq");
-				Day_Count_Basis_X=excelRead.Test_Excel_Details.Loan_ND_Elements_Sheet_MapDatas.get("Day_Count_Basis");
-				Date_Convention_X=excelRead.Test_Excel_Details.Loan_ND_Elements_Sheet_MapDatas.get("Date_Convention");
-				Period_End_X=excelRead.Test_Excel_Details.Loan_ND_Elements_Sheet_MapDatas.get("Period_End");
-				Contact_X=excelRead.Test_Excel_Details.Loan_ND_Elements_Sheet_MapDatas.get("Contact");
-				Department_X=excelRead.Test_Excel_Details.Loan_ND_Elements_Sheet_MapDatas.get("Department");
-				Broker_X=excelRead.Test_Excel_Details.Loan_ND_Elements_Sheet_MapDatas.get("Broker");
-				C_PartyRef_X=excelRead.Test_Excel_Details.Loan_ND_Elements_Sheet_MapDatas.get("C_PartyRef");
-				Deal_Ref_X=excelRead.Test_Excel_Details.Loan_ND_Elements_Sheet_MapDatas.get("Deal_Ref");
-				Certificate_No_X=excelRead.Test_Excel_Details.Loan_ND_Elements_Sheet_MapDatas.get("Certificate_No");
-				Confirmation_Mode_X=excelRead.Test_Excel_Details.Loan_ND_Elements_Sheet_MapDatas.get("Confirmation_Mode");
-				Sub_Type_X=excelRead.Test_Excel_Details.Loan_ND_Elements_Sheet_MapDatas.get("Sub_Type");
-				INFO_Remarks_X=excelRead.Test_Excel_Details.Loan_ND_Elements_Sheet_MapDatas.get("INFO_Remarks");
-				INFO_Close_Btn_X=excelRead.Test_Excel_Details.Loan_ND_Elements_Sheet_MapDatas.get("INFO_Close_Btn");
+				Info_Icon_Btn_X=Loan_ND_Elements_Sheet_MapDatas.get("Info_Icon_Btn");
+				DealReference_Exp_X=Loan_ND_Elements_Sheet_MapDatas.get("DealReference_Exp");
+				Principal_Freq_X=Loan_ND_Elements_Sheet_MapDatas.get("Principal_Freq");
+				Interest_Freq_X=Loan_ND_Elements_Sheet_MapDatas.get("Interest_Freq");
+				Day_Count_Basis_X=Loan_ND_Elements_Sheet_MapDatas.get("Day_Count_Basis");
+				Date_Convention_X=Loan_ND_Elements_Sheet_MapDatas.get("Date_Convention");
+				Period_End_X=Loan_ND_Elements_Sheet_MapDatas.get("Period_End");
+				Contact_X=Loan_ND_Elements_Sheet_MapDatas.get("Contact");
+				Department_X=Loan_ND_Elements_Sheet_MapDatas.get("Department");
+				Broker_X=Loan_ND_Elements_Sheet_MapDatas.get("Broker");
+				C_PartyRef_X=Loan_ND_Elements_Sheet_MapDatas.get("C_PartyRef");
+				Deal_Ref_X=Loan_ND_Elements_Sheet_MapDatas.get("Deal_Ref");
+				Certificate_No_X=Loan_ND_Elements_Sheet_MapDatas.get("Certificate_No");
+				Confirmation_Mode_X=Loan_ND_Elements_Sheet_MapDatas.get("Confirmation_Mode");
+				Sub_Type_X=Loan_ND_Elements_Sheet_MapDatas.get("Sub_Type");
+				INFO_Remarks_X=Loan_ND_Elements_Sheet_MapDatas.get("INFO_Remarks");
+				INFO_Close_Btn_X=Loan_ND_Elements_Sheet_MapDatas.get("INFO_Close_Btn");
 				
 				//BANK DETAILS
-				Bank_Details_Icon_Btn_X=excelRead.Test_Excel_Details.Loan_ND_Elements_Sheet_MapDatas.get("Bank_Details_Icon_Btn");
-				Bank_Entry_ADD_Btn_X=excelRead.Test_Excel_Details.Loan_ND_Elements_Sheet_MapDatas.get("Bank_Entry_ADD_Btn");
-				FirstRowClick_X=excelRead.Test_Excel_Details.Loan_ND_Elements_Sheet_MapDatas.get("FirstRowClick");
-				Our_Bank_X=excelRead.Test_Excel_Details.Loan_ND_Elements_Sheet_MapDatas.get("Our_Bank");
-				Their_Bank_X=excelRead.Test_Excel_Details.Loan_ND_Elements_Sheet_MapDatas.get("Their_Bank");
-				Amount_X=excelRead.Test_Excel_Details.Loan_ND_Elements_Sheet_MapDatas.get("Amount");
-				Mode_X=excelRead.Test_Excel_Details.Loan_ND_Elements_Sheet_MapDatas.get("Mode");
-				BANK_Remarks_X=excelRead.Test_Excel_Details.Loan_ND_Elements_Sheet_MapDatas.get("BANK_Remarks");
-				SecondRowClick_X=excelRead.Test_Excel_Details.Loan_ND_Elements_Sheet_MapDatas.get("SecondRowClick");
-				Total_Settlement_X=excelRead.Test_Excel_Details.Loan_ND_Elements_Sheet_MapDatas.get("Total_Settlement");
-				Settlement_Balance_X=excelRead.Test_Excel_Details.Loan_ND_Elements_Sheet_MapDatas.get("Settlement_Balance");
-				Bank_RowEntry_OK_X=excelRead.Test_Excel_Details.Loan_ND_Elements_Sheet_MapDatas.get("Bank_RowEntry_OK");
-				Bank_RowEntry_DELETE_X=excelRead.Test_Excel_Details.Loan_ND_Elements_Sheet_MapDatas.get("Bank_RowEntry_DELETE");
-				Bank_Close_Btn_X=excelRead.Test_Excel_Details.Loan_ND_Elements_Sheet_MapDatas.get("Bank_Close_Btn");
+				Bank_Details_Icon_Btn_X=Loan_ND_Elements_Sheet_MapDatas.get("Bank_Details_Icon_Btn");
+				Bank_Entry_ADD_Btn_X=Loan_ND_Elements_Sheet_MapDatas.get("Bank_Entry_ADD_Btn");
+				FirstRowClick_X=Loan_ND_Elements_Sheet_MapDatas.get("FirstRowClick");
+				Our_Bank_X=Loan_ND_Elements_Sheet_MapDatas.get("Our_Bank");
+				Their_Bank_X=Loan_ND_Elements_Sheet_MapDatas.get("Their_Bank");
+				Amount_X=Loan_ND_Elements_Sheet_MapDatas.get("Amount");
+				Mode_X=Loan_ND_Elements_Sheet_MapDatas.get("Mode");
+				BANK_Remarks_X=Loan_ND_Elements_Sheet_MapDatas.get("BANK_Remarks");
+				SecondRowClick_X=Loan_ND_Elements_Sheet_MapDatas.get("SecondRowClick");
+				Total_Settlement_X=Loan_ND_Elements_Sheet_MapDatas.get("Total_Settlement");
+				Settlement_Balance_X=Loan_ND_Elements_Sheet_MapDatas.get("Settlement_Balance");
+				Bank_RowEntry_OK_X=Loan_ND_Elements_Sheet_MapDatas.get("Bank_RowEntry_OK");
+				Bank_RowEntry_DELETE_X=Loan_ND_Elements_Sheet_MapDatas.get("Bank_RowEntry_DELETE");
+				Bank_Close_Btn_X=Loan_ND_Elements_Sheet_MapDatas.get("Bank_Close_Btn");
 				
 				//CASH FLOW
-				Cash_Flow_Icon_Btn_X=excelRead.Test_Excel_Details.Loan_ND_Elements_Sheet_MapDatas.get("Cash_Flow_Icon_Btn");
-				Cash_Flow_Close_Btn_X=excelRead.Test_Excel_Details.Loan_ND_Elements_Sheet_MapDatas.get("Cash_Flow_Close_Btn");
+				Cash_Flow_Icon_Btn_X=Loan_ND_Elements_Sheet_MapDatas.get("Cash_Flow_Icon_Btn");
+				Cash_Flow_Close_Btn_X=Loan_ND_Elements_Sheet_MapDatas.get("Cash_Flow_Close_Btn");
 				
 				//AFTER DEAL SAVED
-				Deal_Save_Btn_X=excelRead.Test_Excel_Details.Loan_ND_Elements_Sheet_MapDatas.get("Deal_Save_Btn");
-				Deal_Save_Cancel_Btn_X=excelRead.Test_Excel_Details.Loan_ND_Elements_Sheet_MapDatas.get("Deal_Save_Cancel_Btn");
-				Deal_Save_Status_X=excelRead.Test_Excel_Details.Loan_ND_Elements_Sheet_MapDatas.get("Deal_Save_Status");
-				Deal_ID_X=excelRead.Test_Excel_Details.Loan_ND_Elements_Sheet_MapDatas.get("Deal_ID");
-				Page_Close_After_Deal_Saved_X=excelRead.Test_Excel_Details.Loan_ND_Elements_Sheet_MapDatas.get("Page_Close_After_Deal_Saved");
+				Deal_Save_Btn_X=Loan_ND_Elements_Sheet_MapDatas.get("Deal_Save_Btn");
+				Deal_Save_Cancel_Btn_X=Loan_ND_Elements_Sheet_MapDatas.get("Deal_Save_Cancel_Btn");
+				Deal_Save_Status_X=Loan_ND_Elements_Sheet_MapDatas.get("Deal_Save_Status");
+				Deal_ID_X=Loan_ND_Elements_Sheet_MapDatas.get("Deal_ID");
+				Page_Close_After_Deal_Saved_X=Loan_ND_Elements_Sheet_MapDatas.get("Page_Close_After_Deal_Saved");
 				
-				Deal_Saved_VE=excelRead.Test_Excel_Details.Loan_ND_Elements_Sheet_MapDatas.get("Deal_Saved");
-				Deal_Not_Saved_VE=excelRead.Test_Excel_Details.Loan_ND_Elements_Sheet_MapDatas.get("Deal_Not_Saved");
+				Deal_Saved_VE=Loan_ND_Elements_Sheet_MapDatas.get("Deal_Saved");
+				Deal_Not_Saved_VE=Loan_ND_Elements_Sheet_MapDatas.get("Deal_Not_Saved");
 				
 				log.info("--------------- <Loan_ND > configureValues() Initiate Completed> ---------------");
 			}
