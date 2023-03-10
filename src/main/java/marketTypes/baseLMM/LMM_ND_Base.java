@@ -37,7 +37,9 @@ public class LMM_ND_Base {
 		log.info("Landed in Loan_ND Screen");
 	}
 
-	public static void balSheetClick(WebDriver driver, WebDriverWait wait_E, String Asset_Liabiity) {	
+	public static void balSheetClick(WebDriver driver, WebDriverWait wait_E, String Asset_Liabiity) {
+		//To Ensure, the Blocking Layer Becomes Hidden/Not
+		wait_E.until(ExpectedConditions.invisibilityOfAllElements(frameWorks.pageObjectModel.CommonElements.BalSheetClickBlocker_EL(driver)));
 		if(Asset_Liabiity.equalsIgnoreCase("Asset")){
 			log.info("Balance Sheet is 'Asset'");
 			wait_E.until(ExpectedConditions.visibilityOf(frameWorks.pageObjectModel.Loan_ND.Asset_EL(driver))).click();

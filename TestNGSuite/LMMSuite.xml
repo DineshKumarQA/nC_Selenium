@@ -7,7 +7,7 @@
 		<classes>
 						
 			<class name ="beforeTest.Bfr_Any_Test" />
-			<class name ="marketTypesTest.LMM.LMM_ND_Test_Save_Edit">
+			<class name ="marketTypes.testLMM.LMM_ND_Test_Save_Edit">
 				<methods>
 			        <include name="newModeInputs" />
 			        <include name="newModeInputsVerify" />

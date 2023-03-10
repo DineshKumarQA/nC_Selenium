@@ -3,14 +3,14 @@
 <suite name="Failed suite [LMM_Suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="LMM_ND_Test(failed)">
     <classes>
-      <class name="marketTypesTest.LMM.LMM_ND_Test_Save_Edit">
+      <class name="marketTypes.testLMM.LMM_ND_Test_Save_Edit">
         <methods>
-          <include name="editModeInputs"/>
-          <include name="editModeInputsVerify"/>
           <include name="newModeInputsVerify"/>
+          <include name="editModeInputsVerify"/>
           <include name="newModeInputs"/>
+          <include name="editModeInputs"/>
         </methods>
-      </class> <!-- marketTypesTest.LMM.LMM_ND_Test_Save_Edit -->
+      </class> <!-- marketTypes.testLMM.LMM_ND_Test_Save_Edit -->
     </classes>
   </test> <!-- LMM_ND_Test(failed) -->
 </suite> <!-- Failed suite [LMM_Suite] -->

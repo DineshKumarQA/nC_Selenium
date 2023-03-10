@@ -33,6 +33,7 @@ public class CommonElements {
 		
 		public static String Page_Load_Circle_X;
 		public static String Page_Load_BackDrop_X;
+		public static String BalSheetClickBlocker_X;
 		
 		
 		public static void configureValues(HashMap<String, String> Common_Elements_Sheet_MapDatas){
@@ -59,6 +60,7 @@ public class CommonElements {
 		
 		Page_Load_Circle_X=Common_Elements_Sheet_MapDatas.get("Page_Load_Circle");
 		Page_Load_BackDrop_X=Common_Elements_Sheet_MapDatas.get("Page_Load_BackDrop");
+		BalSheetClickBlocker_X=Common_Elements_Sheet_MapDatas.get("BalSheetClickBlocker");
 		
 		log.info("--------------- <CommonElements > configureValues() Initiate Completed> ---------------");
 		}
@@ -136,6 +138,10 @@ public class CommonElements {
 		
 		public static List<WebElement> Page_Load_BackDrop_EL(WebDriver driver){
 			return driver.findElements(By.xpath(Page_Load_BackDrop_X));
+		}
+		
+		public static List<WebElement> BalSheetClickBlocker_EL(WebDriver driver){
+			return driver.findElements(By.xpath(BalSheetClickBlocker_X));
 		}
 		
 		

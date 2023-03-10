@@ -2,38 +2,38 @@
 <testng-results ignored="0" total="4" passed="4" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-03-07T15:44:32 IST" name="LMM_Suite" finished-at="2023-03-07T15:46:47 IST" duration-ms="135120">
+  <suite started-at="2023-03-10T09:47:39 IST" name="LMM_Suite" finished-at="2023-03-10T09:49:42 IST" duration-ms="123133">
     <groups>
     </groups>
-    <test started-at="2023-03-07T15:44:32 IST" name="LMM_ND_Test" finished-at="2023-03-07T15:46:47 IST" duration-ms="135120">
+    <test started-at="2023-03-10T09:47:39 IST" name="LMM_ND_Test" finished-at="2023-03-10T09:49:42 IST" duration-ms="123133">
+      <class name="marketTypes.testLMM.LMM_ND_Test_Save_Edit">
+        <test-method signature="newModeInputs()[pri:0, instance:marketTypes.testLMM.LMM_ND_Test_Save_Edit@53fe15ff]" started-at="2023-03-10T09:47:39 IST" name="newModeInputs" finished-at="2023-03-10T09:48:32 IST" duration-ms="53224" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- newModeInputs -->
+        <test-method signature="newModeInputsVerify()[pri:0, instance:marketTypes.testLMM.LMM_ND_Test_Save_Edit@53fe15ff]" started-at="2023-03-10T09:48:32 IST" name="newModeInputsVerify" finished-at="2023-03-10T09:48:45 IST" depends-on-methods="marketTypes.testLMM.LMM_ND_Test_Save_Edit.newModeInputs" duration-ms="12490" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- newModeInputsVerify -->
+        <test-method signature="editModeInputs()[pri:0, instance:marketTypes.testLMM.LMM_ND_Test_Save_Edit@53fe15ff]" started-at="2023-03-10T09:48:45 IST" name="editModeInputs" finished-at="2023-03-10T09:49:30 IST" depends-on-methods="marketTypes.testLMM.LMM_ND_Test_Save_Edit.newModeInputsVerify" duration-ms="45549" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- editModeInputs -->
+        <test-method signature="editModeInputsVerify()[pri:0, instance:marketTypes.testLMM.LMM_ND_Test_Save_Edit@53fe15ff]" started-at="2023-03-10T09:49:30 IST" name="editModeInputsVerify" finished-at="2023-03-10T09:49:42 IST" depends-on-methods="marketTypes.testLMM.LMM_ND_Test_Save_Edit.editModeInputs" duration-ms="11391" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- editModeInputsVerify -->
+      </class> <!-- marketTypes.testLMM.LMM_ND_Test_Save_Edit -->
       <class name="beforeTest.Bfr_Any_Test">
-        <test-method is-config="true" signature="bfr_Any_Test()[pri:0, instance:beforeTest.Bfr_Any_Test@53aac487]" started-at="2023-03-07T15:44:20 IST" name="bfr_Any_Test" finished-at="2023-03-07T15:44:32 IST" duration-ms="11427" status="PASS">
+        <test-method is-config="true" signature="bfr_Any_Test()[pri:0, instance:beforeTest.Bfr_Any_Test@53aac487]" started-at="2023-03-10T09:47:25 IST" name="bfr_Any_Test" finished-at="2023-03-10T09:47:39 IST" duration-ms="14022" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- bfr_Any_Test -->
-        <test-method is-config="true" signature="bfr_LMM_Test()[pri:0, instance:beforeTest.Bfr_Any_Test@53aac487]" started-at="2023-03-07T15:44:32 IST" name="bfr_LMM_Test" finished-at="2023-03-07T15:44:32 IST" duration-ms="448" status="PASS">
+        <test-method is-config="true" signature="bfr_LMM_Test()[pri:0, instance:beforeTest.Bfr_Any_Test@53aac487]" started-at="2023-03-10T09:47:39 IST" name="bfr_LMM_Test" finished-at="2023-03-10T09:47:39 IST" duration-ms="437" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- bfr_LMM_Test -->
       </class> <!-- beforeTest.Bfr_Any_Test -->
-      <class name="marketTypesTest.LMM.LMM_ND_Test_Save_Edit">
-        <test-method signature="newModeInputs()[pri:0, instance:marketTypesTest.LMM.LMM_ND_Test_Save_Edit@53fe15ff]" started-at="2023-03-07T15:44:32 IST" name="newModeInputs" finished-at="2023-03-07T15:45:29 IST" duration-ms="57328" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- newModeInputs -->
-        <test-method signature="newModeInputsVerify()[pri:0, instance:marketTypesTest.LMM.LMM_ND_Test_Save_Edit@53fe15ff]" started-at="2023-03-07T15:45:29 IST" name="newModeInputsVerify" finished-at="2023-03-07T15:45:44 IST" depends-on-methods="marketTypesTest.LMM.LMM_ND_Test_Save_Edit.newModeInputs" duration-ms="14731" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- newModeInputsVerify -->
-        <test-method signature="editModeInputs()[pri:0, instance:marketTypesTest.LMM.LMM_ND_Test_Save_Edit@53fe15ff]" started-at="2023-03-07T15:45:44 IST" name="editModeInputs" finished-at="2023-03-07T15:46:34 IST" depends-on-methods="marketTypesTest.LMM.LMM_ND_Test_Save_Edit.newModeInputsVerify" duration-ms="49515" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- editModeInputs -->
-        <test-method signature="editModeInputsVerify()[pri:0, instance:marketTypesTest.LMM.LMM_ND_Test_Save_Edit@53fe15ff]" started-at="2023-03-07T15:46:34 IST" name="editModeInputsVerify" finished-at="2023-03-07T15:46:47 IST" depends-on-methods="marketTypesTest.LMM.LMM_ND_Test_Save_Edit.editModeInputs" duration-ms="13036" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- editModeInputsVerify -->
-      </class> <!-- marketTypesTest.LMM.LMM_ND_Test_Save_Edit -->
     </test> <!-- LMM_ND_Test -->
   </suite> <!-- LMM_Suite -->
 </testng-results>
