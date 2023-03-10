@@ -15,10 +15,21 @@ public class Dashboard_Elements {
 	public static String ADD_Deal_Btn_X;
 	public static String Money_Market_X;
 	public static String Loan_X;
+	
+	public static String Menu_Btn_X;
+	public static String Pending_Deal_Menu_X;
 
 	public static String Pending_Deal_Icon_X;
 	public static String ApprovalDropDown_X;
-	public static String Deal_Approval_Menu_X;
+	
+	public static String Pending_Limit_Approval_Menu_V;
+	public static String Deal_Approval_Menu_V;
+	public static String CE_Approval_Menu_V;
+	public static String Security_Settlement_Menu_V;
+	public static String Pending_Settlement_Menu_V;
+	public static String Cashflow_ReSchedule_Menu_V;
+	public static String Additional_Principal_Menu_V;
+	public static String Settled_Deals_Menu_V;
 
 	public static String Three_Dots_Btn_X;
 	public static String Deal_Edit_X;
@@ -33,11 +44,22 @@ public class Dashboard_Elements {
 		ADD_Deal_Btn_X = Dashboard_Elements_Sheet_MapDatas.get("ADD_DEAL_Btn");
 		Money_Market_X = Dashboard_Elements_Sheet_MapDatas.get("Money_Market");
 		Loan_X = Dashboard_Elements_Sheet_MapDatas.get("Loan");
+		
+		Menu_Btn_X = Dashboard_Elements_Sheet_MapDatas.get("Menu_Btn");
+		Pending_Deal_Menu_X = Dashboard_Elements_Sheet_MapDatas.get("Pending_Deal_Menu");
 
 		Pending_Deal_Icon_X = Dashboard_Elements_Sheet_MapDatas.get("Pending_Deal_Icon");
 
 		ApprovalDropDown_X = Dashboard_Elements_Sheet_MapDatas.get("ApprovalDropDown");
-		Deal_Approval_Menu_X = Dashboard_Elements_Sheet_MapDatas.get("Deal_Approval_Menu");
+		
+		Pending_Limit_Approval_Menu_V = Dashboard_Elements_Sheet_MapDatas.get("Pending_Limit_Approval_Menu");
+		Deal_Approval_Menu_V = Dashboard_Elements_Sheet_MapDatas.get("Deal_Approval_Menu");
+		CE_Approval_Menu_V = Dashboard_Elements_Sheet_MapDatas.get("CE_Approval_Menu");
+		Security_Settlement_Menu_V = Dashboard_Elements_Sheet_MapDatas.get("Security_Settlement_Menu");
+		Pending_Settlement_Menu_V = Dashboard_Elements_Sheet_MapDatas.get("Pending_Settlement_Menu");
+		Cashflow_ReSchedule_Menu_V = Dashboard_Elements_Sheet_MapDatas.get("Cashflow_ReSchedule_Menu");
+		Additional_Principal_Menu_V = Dashboard_Elements_Sheet_MapDatas.get("Additional_Principal_Menu");
+		Settled_Deals_Menu_V = Dashboard_Elements_Sheet_MapDatas.get("Settled_Deals_Menu");
 
 		Three_Dots_Btn_X = Dashboard_Elements_Sheet_MapDatas.get("Three_Dots_Btn");
 		Deal_Edit_X = Dashboard_Elements_Sheet_MapDatas.get("Deal_Edit");
@@ -59,6 +81,14 @@ public class Dashboard_Elements {
 	public static WebElement Loan_EL(WebDriver driver) {
 		return driver.findElement(By.xpath(Loan_X));
 	}
+	
+	public static WebElement Menu_Btn_EL(WebDriver driver) {
+		return driver.findElement(By.xpath(Menu_Btn_X));
+	}	
+	
+	public static WebElement Pending_Deal_Menu_EL(WebDriver driver) {
+		return driver.findElement(By.xpath(Pending_Deal_Menu_X));
+	}
 
 	public static WebElement Pending_Deal_Icon_EL(WebDriver driver) {
 		return driver.findElement(By.xpath(Pending_Deal_Icon_X));
@@ -66,10 +96,6 @@ public class Dashboard_Elements {
 
 	public static WebElement ApprovalDropDown_EL(WebDriver driver) {
 		return driver.findElement(By.xpath(ApprovalDropDown_X));
-	}
-
-	public static WebElement Deal_Approval_Menu_EL(WebDriver driver) {
-		return driver.findElement(By.xpath(Deal_Approval_Menu_X));
 	}
 
 	public static WebElement Three_Dots_Btn_EL(WebDriver driver) {

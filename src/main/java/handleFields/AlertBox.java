@@ -18,7 +18,7 @@ public class AlertBox {
 	public static void alertBoxHandle(WebDriver driver){
 			
 		//wait_E=beforeTest.DriverConfig.wait_E;
-		wait_E=new WebDriverWait(driver,3);
+		wait_E=new WebDriverWait(driver,4);
 		
 		/**  HOLIDAY CHECK & DEAL SAVE - Confirmation Handle  **/
 		

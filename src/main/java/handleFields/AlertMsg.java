@@ -24,25 +24,19 @@ public class AlertMsg {
 					log.info("System Prompted An 'Success' Alert Message!");
 
 					String Alert_Msg = frameWorks.pageObjectModel.CommonElements.Alert_Msg_EL(driver).getText();
-					log.info("The Alert Message is : '" + Alert_Msg + "'");
-
-					frameWorks.pageObjectModel.CommonElements.Alert_Close_Btn_EL(driver).click();
+					log.info("The Alert Message is : '" + Alert_Msg + "'");					
 				}
 				else if(frameWorks.pageObjectModel.CommonElements.Alert_Msg_Warning_EL(driver).isDisplayed()){
-					log.info("System Prompted An 'Warning' Alert Message!");
+					log.warn("System Prompted An 'Warning' Alert Message!");
 
 					String Alert_Msg = frameWorks.pageObjectModel.CommonElements.Alert_Msg_EL(driver).getText();
 					log.info("The Alert Message is : '" + Alert_Msg + "'");
-
-					frameWorks.pageObjectModel.CommonElements.Alert_Close_Btn_EL(driver).click();
 				}
 				else if(frameWorks.pageObjectModel.CommonElements.Alert_Msg_Error_EL(driver).isDisplayed()){
 					log.error("System Prompted An 'Error/Exception' Alert Message!");
 
 					String Alert_Msg = frameWorks.pageObjectModel.CommonElements.Alert_Msg_EL(driver).getText();
 					log.warn("The Alert Message is : '" + Alert_Msg + "'");
-
-					frameWorks.pageObjectModel.CommonElements.Alert_Close_Btn_EL(driver).click();
 					/**
 					log.error("The Test Will Not Continue, As It is 'Error/Exception' Msg.");
 					log.error("Please Refer Log For More Details & Seek the Technical Assistance!");
@@ -50,11 +44,10 @@ public class AlertMsg {
 					driver.quit();
 					 **/
 				}
-
+				frameWorks.pageObjectModel.CommonElements.Alert_Close_Btn_EL(driver).click();
 			} catch (Exception e) {
 				log.info("System Does Not Prompted Any Alert Message! So, Proceed Further.");
 			}
-
 		}
 	}
 }

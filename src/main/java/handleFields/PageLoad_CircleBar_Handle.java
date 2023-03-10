@@ -26,7 +26,8 @@ public class PageLoad_CircleBar_Handle {
 			}
 		}catch(Exception e) {
 			log.warn("Either Page_Load takes too Long than Defined Timout OR Page_Load Didn't Occurs");
-			log.warn("Exception Details"+e);
+			log.info("However, The Test will Continue");
+			log.warn("Exception Details : "+e);
 		}
 		return is_PageLoaded;
 	}
