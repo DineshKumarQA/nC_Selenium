@@ -26,7 +26,7 @@ public class DropDowns {
 		
 		int loop_Count=0;		
 		
-		while(Flag){				
+		while(Flag){			
 				
 			default_Values=Element.getAttribute("Value").trim();
 			log.info("Defaulted Value is : '"+default_Values+"'");

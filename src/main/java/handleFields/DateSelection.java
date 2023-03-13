@@ -92,7 +92,7 @@ public class DateSelection {
 		List<WebElement> list_of_Year_Search_EL=frameWorks.pageObjectModel.CommonElements.Year_Search_EL(driver);
 		
 		for(WebElement Find_Input_Year : list_of_Year_Search_EL){
-			if(Find_Input_Year.getText().equals(Year)){				
+			if(Find_Input_Year.getText().equals(Year)){		
 				Find_Input_Year.click();	
 				log.info("Given Year is Selected!");
 				break;
